@@ -2,9 +2,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Add an Alien</title>
 </head>
-<body>
+  <body>
+    <h1>Add Alien</h1>
 
-</body>
+      <form action="add.do" method="POST">
+		<p>Name</p>
+      	<input type="text" name="name">
+      	<p>Species</p>
+        <select name="species">
+		  <option value="nativeReptilian">Native Reptilian</option>
+		  <option value="alphaDraconian">Alpha Draconian</option>
+		  <option value="grey">Grey</option>
+		  <option value="sirian">Sirian</option>
+		</select>
+		<p>Star System</p>
+		<input type="text" name="starSystem"><br />
+		<input type="text" name="image"><br />
+        <input type="submit" value="Submit" /><br />
+      </form>
+
+  </body>
 </html>

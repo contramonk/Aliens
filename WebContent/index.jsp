@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Aliens</title>
 </head>
 <body>
+<h1>Aliens</h1>
+<a href="add.html">Add Alien</a>
+
+<p>${alien.name}<p>
 
 </body>
 </html>
