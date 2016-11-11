@@ -13,32 +13,96 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <title>Aliens</title>
+<style>
+body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  body > .container-fluid:nth-of-type(odd) {
+  	background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  body > .container-fluid:nth-of-type(even) {
+   	  background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  button {
+  	color: #555555;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
 </head>
 <body>
-<div class="container">
-	<div class="jumbotron text-center">
-	  <h1>Aliens</h1>
-	  <p>woot!</p>
-	</div>
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Alien List</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="add.html">Add Alien</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 	
-	<h1>Aliens</h1>
 	
-	<div><a href="add.html">Add Alien</a></div>
+	
 	
 	
 	<c:forEach var="a" items="${aliensList}" varStatus="loop">
-		<div class="panel-group" style="float:left">
-			<div class="panel panel-default">
-				<p>${a.name}</p>
+	<div class="container-fluid">
+		<div>
+			<div style="float:left">
+				<img class="img-circle" src="${a.image}" height="300" width="300" />
 			</div>
-			<div class="panel panel-default">
-				<img class="img-circlesrc" src="${a.image}" height="150" width="150" />
-			</div>
-			<div class="panel panel-default">
-				<p>${a.species}</p>
-				<p>${a.starSystem}</p>
-				<p>${a.faction}</p>
+			<div>
+				<p>Name: ${a.name}</p>
+				<p>Species: ${a.species}</p>
+				<p>Star System: ${a.starSystem}</p>
+				<p>Faction: ${a.faction}</p>
 			</div>
 				<form style="float:left" action="remove.do">
 				<button name="remove" value="${a.name}">Remove</button>
@@ -47,11 +111,11 @@
 				<button name="edit" value="${a.name}" onclick="edit.do">Edit</button>
 				</form>
 				</div>
+				<div style="clear: both;"></div>
 		
-	</c:forEach>
-	<div style="clear: both;"></div>
-	<p>test</p>
 </div>
+	</c:forEach>
+	<p>test</p>
 
 </body>
 </html>
