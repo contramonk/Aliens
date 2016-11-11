@@ -10,7 +10,14 @@
 <body>
 <h1>Edit ${alien.name}</h1>
 
-<!-- <form action="edit.do" method="POST">
+	<p>Current Attributes</p>
+	<p>Name: ${alien.name}</p>
+	<p>Species: ${alien.species};
+	<p>Star System: ${alien.starSystem}</p>
+	<p>Faction: ${alien.faction}
+	<p>Image: ${alien.image }
+
+	<form action="edit.do" method="POST">
 		<p>Name</p>
       	<input type="text" name="name">
       	<p>Species</p>
@@ -24,6 +31,6 @@
 		<input type="text" name="starSystem"><br />
 		<input type="text" name="image"><br />
         <input type="submit" value="Submit" /><br />
-      </form> -->
+      </form>
 </body>
 </html>
