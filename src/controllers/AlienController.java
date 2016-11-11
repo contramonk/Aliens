@@ -53,8 +53,9 @@ public class AlienController {
 	  return mv;
   }
   
-  @RequestMapping(path="edit.do", params="edit")
-  public ModelAndView editAlien(Alien alien) {
+  @RequestMapping(path="edit.do")
+  public ModelAndView editAlien(@RequestParam("edit") String name, @ModelAttribute("sessionData") CurrentState cs) {
+	  Alien alien = alienDAO.getAlienByName(name);
 	  ModelAndView mv = new ModelAndView();
 	  mv.setViewName("edit.jsp");
 	  mv.addObject("alien", alien);

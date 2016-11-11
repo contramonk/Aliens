@@ -60,6 +60,7 @@ public class AlienDAOImp implements AlienDAO {
 		for (Alien alien : AliensList) {
 			if (alien.getName().equals(name)) {
 				alienToRemove = alien;
+				break;
 			}
 		}
 		if(alienToRemove!=null) {
@@ -71,10 +72,11 @@ public class AlienDAOImp implements AlienDAO {
 		Alien alienToFind = null;
 		for (Alien alien : AliensList) {
 			if (alien.getName().equals(name)) {
-				return alien;
+				alienToFind = alien;
+				break;
 			}
-			return null;
 		}
+		return alienToFind;
 	}
 
 }

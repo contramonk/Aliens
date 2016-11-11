@@ -1,7 +1,9 @@
 package data;
 
-public class CurrentState {
+import entities.Alien;
 
+public class CurrentState {
+	private Alien alien;
 	private Integer index;
 
 	public CurrentState() {
@@ -22,5 +24,13 @@ public class CurrentState {
 
 	public Integer getIndex() {
 		return index;
+	}
+
+	public Alien getAlien() {
+		return alien;
+	}
+
+	public void setAlien(Alien alien) {
+		this.alien = alien;
 	}
 }
