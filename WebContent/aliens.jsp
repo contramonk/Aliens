@@ -92,28 +92,32 @@ body {
 	
 	
 	
-	<c:forEach var="a" items="${aliensList}" varStatus="loop">
+	<c:forEach var="a" items="${aliensList}">
 	<div class="container-fluid">
-		<div>
-			<div style="float:left">
-				<img class="img-circle" src="${a.image}" height="300" width="300" />
+		<div id="row">
+			<div class="col-sm-4">
+				<img class="img-circle" class="img-responsive margin" src="${a.image}" height="300" width="300" />
 			</div>
-			<div>
-				<p>Name: ${a.name}</p>
-				<p>Species: ${a.species}</p>
-				<p>Star System: ${a.starSystem}</p>
-				<p>Faction: ${a.faction}</p>
+			<div class="col-sm-4">
+				<ul>
+					<li><b>Name:</b> ${a.name}</li>
+					<li><b>Species:</b> ${a.species}</li>
+					<li><b>Star System:</b> ${a.starSystem}</li>
+					<li><b>Faction:</b> ${a.faction}</li>
+				</ul>
 			</div>
+			<div class="col-sm-4">
 				<form style="float:left" action="remove.do">
 				<button name="remove" value="${a.name}">Remove</button>
 				</form>
 				<form action="edit.do">
 				<button name="edit" value="${a.name}" onclick="edit.do">Edit</button>
 				</form>
-				</div>
-				<div style="clear: both;"></div>
+				
+			</div>
+		</div>
 		
-</div>
+	</div>
 	</c:forEach>
 	<p>test</p>
 
