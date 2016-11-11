@@ -10,27 +10,27 @@
 <body>
 <h1>Edit ${alien.name}</h1>
 
+	<img src="${alien.image}" width="150px" height="150px"/>
 	<p>Current Attributes</p>
 	<p>Name: ${alien.name}</p>
 	<p>Species: ${alien.species};
 	<p>Star System: ${alien.starSystem}</p>
 	<p>Faction: ${alien.faction}
-	<p>Image: ${alien.image }
+	<p>Image: ${alien.image}
 
 	<form action="update.do" method="POST">
-	<input type="hidden" name="oldName" value="${alien.name}" }>
+	<input type="hidden" name="oldName" value="${alien.name}">
 		<p>Name</p>
-      	<input type="text" name="name">
+      	<input type="text" name="name" value="${alien.name}">
       	<p>Species</p>
-        <select name="species">
-		  <option value="nativeReptilian">Native Reptilian</option>
-		  <option value="alphaDraconian">Alpha Draconian</option>
-		  <option value="grey">Grey</option>
-		  <option value="sirian">Sirian</option>
-		</select>
+        <input type="text" name="species" value="${alien.species}">
 		<p>Star System</p>
-		<input type="text" name="starSystem"><br />
-		<input type="text" name="image"><br />
+		<input type="text" name="starSystem" value="${alien.starSystem}">
+		<p>Faction</p>
+		<input type="text" name="faction" value="${alien.faction}">
+		<p>Image</p>
+		<input type="text" name="image" value="${alien.image}">
+		<p>Image</p>
         <input type="submit" value="Submit" /><br />
       </form>
 </body>
