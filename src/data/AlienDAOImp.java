@@ -78,5 +78,15 @@ public class AlienDAOImp implements AlienDAO {
 		}
 		return alienToFind;
 	}
+	
+	public void updateAlien(int index, Alien alien) {
+		AliensList.set(index, alien);
+	}
+	
+	public int getAlienIndex(Alien alien) {	
+		System.out.println("Alien index:" + AliensList.indexOf(alien));
+		int index = AliensList.indexOf(alien);
+		return index;
+	}
 
 }

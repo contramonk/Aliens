@@ -13,6 +13,8 @@ public interface AlienDAO {
 	List<Alien> getAliensList();
 	void removeAlienFromList(String name);
 	Alien getAlienByName(String name);
+	void updateAlien(int index, Alien alien);
+	int getAlienIndex(Alien alien);
 }
 
 

@@ -17,7 +17,8 @@
 	<p>Faction: ${alien.faction}
 	<p>Image: ${alien.image }
 
-	<form action="edit.do" method="POST">
+	<form action="update.do" method="POST">
+	<input type="hidden" name="oldName" value="${alien.name}" }>
 		<p>Name</p>
       	<input type="text" name="name">
       	<p>Species</p>

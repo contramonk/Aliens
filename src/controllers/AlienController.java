@@ -63,4 +63,16 @@ public class AlienController {
 	  return mv;
 	  
   }
+  
+  @RequestMapping(path="update.do")
+  public ModelAndView updateAlien(Alien alien, @RequestParam("oldName") String name, @ModelAttribute("sessionData") CurrentState cs) {
+	  Alien oldAlien = alienDAO.getAlienByName(name);
+	  int index = alienDAO.getAlienIndex(oldAlien);
+	  alienDAO.updateAlien(index, alien);
+	  ModelAndView mv = new ModelAndView();
+	  mv.setViewName("edit.jsp");
+	  mv.addObject("alien", alien);
+//	  mv.addObject("aliensList", alienDAO.getAliensList());
+	  return mv;
+  }
 }

@@ -3,7 +3,6 @@ package data;
 import entities.Alien;
 
 public class CurrentState {
-	private Alien alien;
 	private Integer index;
 
 	public CurrentState() {
@@ -26,11 +25,4 @@ public class CurrentState {
 		return index;
 	}
 
-	public Alien getAlien() {
-		return alien;
-	}
-
-	public void setAlien(Alien alien) {
-		this.alien = alien;
-	}
 }
