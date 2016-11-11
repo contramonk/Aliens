@@ -43,6 +43,11 @@ body {
       padding-top: 70px;
       padding-bottom: 70px;
   }
+  #footer {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  
+  }
   body > .container-fluid:nth-of-type(odd) {
   	background-color: #ffffff; /* White */
       color: #555555;
@@ -119,7 +124,10 @@ body {
 		
 	</div>
 	</c:forEach>
-	<p>test</p>
+	<!-- Footer -->
+<footer class="container-fluid bg-4 text-center" id="footer">
+  <p>Jonathan Edwards | Skill Distillery SD7</p>
+</footer>
 
 </body>
 </html>
