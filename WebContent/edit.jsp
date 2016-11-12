@@ -14,32 +14,71 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Edit Alien</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1>Edit ${alien.name}</h1>
+<!-- Navbar -->
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="list.do">Alien List</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="add.html">Add Alien</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 
-	<img src="${alien.image}" width="150px" height="150px"/>
-	<p>Current Attributes</p>
-	<p>Name: ${alien.name}</p>
-	<p>Species: ${alien.species};
-	<p>Star System: ${alien.starSystem}</p>
-	<p>Faction: ${alien.faction}
-	<p>Image: ${alien.image}
-
-	<form action="update.do" method="POST">
-	<input type="hidden" name="oldName" value="${alien.name}">
-		<p>Name</p>
-      	<input type="text" name="name" value="${alien.name}">
-      	<p>Species</p>
-        <input type="text" name="species" value="${alien.species}">
-		<p>Star System</p>
-		<input type="text" name="starSystem" value="${alien.starSystem}">
-		<p>Faction</p>
-		<input type="text" name="faction" value="${alien.faction}">
-		<p>Image</p>
-		<input type="text" name="image" value="${alien.image}">
-		<p>Image</p>
-        <input type="submit" value="Submit" /><br />
-      </form>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4">
+			<img class="img-circle" src="${alien.image}" />
+		</div>
+		<div class="col-sm-4">
+			<ul>
+				<li>Current Attributes</li>
+				<li>Name: ${alien.name}</li>
+				<li>Species: ${alien.species}</li>
+				<li>Star System: ${alien.starSystem}</li>
+				<li>Faction: ${alien.faction}</li>
+			</ul>
+		</div>
+		<div class="col-sm-4">
+			<form action="update.do" method="POST">
+			<input type="hidden" name="oldName" value="${alien.name}">
+			<div class="form-group">
+				<label for="aName">Name</label>
+		      	<input type="text" id="aName" name="name" value="${alien.name}">
+			</div>
+			<div class="form-group">
+		      	<label for="aSpecies">Species</label>
+		        <input type="text" id="aSpecies" name="species" value="${alien.species}">
+			</div>
+			<div class="form-group">
+				<label for="aStarSystem">Star System</label>
+				<input type="text" id="aStarSystem" name="starSystem" value="${alien.starSystem}">
+			</div>
+				<label for="aFaction">Email address</label>
+				<input type="text" id="aFaction" name="faction" value="${alien.faction}">
+			<div class="form-group">
+				<label for="aImage">Image</label>
+				<input type="text" id="aImage" name="image" value="${alien.image}">
+			</div>
+		        <input type="submit" value="Submit" />
+		    
+		    </form>
+      	</div>
+     </div>
+ </div>
+ <footer class="container-fluid bg-4 text-center" id="footer">
+  <p>Jonathan Edwards | Skill Distillery SD7</p>
+</footer>
 </body>
 </html>

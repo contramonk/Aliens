@@ -11,67 +11,9 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <title>Aliens</title>
-<style>
-body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 {
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 {
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 {
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  .bg-4 {
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  #footer {
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  
-  }
-  body > .container-fluid:nth-of-type(odd) {
-  	background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  body > .container-fluid:nth-of-type(even) {
-   	  background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-  button {
-  	color: #555555;
-  }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-  </style>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 	<!-- Navbar -->
@@ -101,7 +43,7 @@ body {
 	<div class="container-fluid">
 		<div id="row">
 			<div class="col-sm-4">
-				<img class="img-circle" class="img-responsive margin" src="${a.image}" height="300" width="300" />
+				<img class="img-circle" src="${a.image}"  />
 			</div>
 			<div class="col-sm-4">
 				<ul>
