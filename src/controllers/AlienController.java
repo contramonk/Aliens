@@ -76,9 +76,33 @@ public class AlienController {
 	  return mv;
   }
   
-  @RequestMapping(path="sort.do")
-  public ModelAndView sortAliens() {
+  @RequestMapping(path="sortName.do")
+  public ModelAndView sortAliensByName() {
 	  alienDAO.sortAliensByName();
+	  ModelAndView mv = new ModelAndView(); // here
+	  mv.setViewName("list.do");
+	  
+	  return mv;
+  }
+  @RequestMapping(path="sortSpecies.do")
+  public ModelAndView sortAliensBySpecies() {
+	  alienDAO.sortAliensBySpecies();
+	  ModelAndView mv = new ModelAndView(); // here
+	  mv.setViewName("list.do");
+	  
+	  return mv;
+  }
+  @RequestMapping(path="sortStarSystem.do")
+  public ModelAndView sortAliensByStarSystem() {
+	  alienDAO.sortAliensByStarSystem();
+	  ModelAndView mv = new ModelAndView(); // here
+	  mv.setViewName("list.do");
+	  
+	  return mv;
+  }
+  @RequestMapping(path="sortFaction.do")
+  public ModelAndView sortAliensByFaction() {
+	  alienDAO.sortAliensByFaction();
 	  ModelAndView mv = new ModelAndView(); // here
 	  mv.setViewName("list.do");
 	  

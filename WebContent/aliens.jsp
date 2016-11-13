@@ -30,7 +30,10 @@
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="add.html">Add Alien</a></li>
-	        <li><a href="sort.do">Filter</a></li>
+	        <li><a href="sortName.do">Name</a></li>
+	        <li><a href="sortSpecies.do">Species</a></li>
+	        <li><a href="sortStarSystem.do">StarSystem</a></li>
+	        <li><a href="sortFaction.do">Faction</a></li>
 	      </ul>
 	    </div>
 	  </div>

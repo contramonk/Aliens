@@ -93,5 +93,15 @@ public class AlienDAOImp implements AlienDAO {
 	public void sortAliensByName() {
 		AliensList.sort((Alien a1, Alien a2)->a1.getName().compareTo(a2.getName()));
 	}
+	public void sortAliensBySpecies() {
+		AliensList.sort((Alien a1, Alien a2)->a1.getSpecies().compareTo(a2.getSpecies()));
+	}
+	public void sortAliensByStarSystem() {
+		AliensList.sort((Alien a1, Alien a2)->a1.getStarSystem().compareTo(a2.getStarSystem()));
+	}
+	public void sortAliensByFaction() {
+		AliensList.sort((Alien a1, Alien a2)->a1.getFaction().compareTo(a2.getFaction()));
+	}
+	
 
 }

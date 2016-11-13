@@ -16,6 +16,9 @@ public interface AlienDAO {
 	void updateAlien(int index, Alien alien);
 	int getAlienIndex(Alien alien);
 	void sortAliensByName();
+	void sortAliensBySpecies();
+	void sortAliensByFaction();
+	void sortAliensByStarSystem();
 }
 
 
