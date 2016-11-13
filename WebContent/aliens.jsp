@@ -27,17 +27,24 @@
 	      </button>
 	      <a class="navbar-brand" href="list.do">Alien List</a>
 	    </div>
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="add.html">Add Alien</a></li>
-	        <li><a href="sortName.do">Name</a></li>
-	        <li><a href="sortSpecies.do">Species</a></li>
-	        <li><a href="sortStarSystem.do">StarSystem</a></li>
-	        <li><a href="sortFaction.do">Faction</a></li>
-	      </ul>
-	    </div>
 	  </div>
 	</nav>
+	<nav class="navbar navbar-inverse" id="filterBar">
+	  <div class="container">
+	    	<div class="collapse navbar-collapse" id="myNavbar2">
+		    	<ul class="nav navbar-nav navbar-left">
+		    		<li><a href="">Sort:</a></li>
+			        <li><a href="sortName.do">Name</a></li>
+			        <li><a href="sortSpecies.do">Species</a></li>
+			        <li><a href="sortStarSystem.do">StarSystem</a></li>
+			        <li><a href="sortFaction.do">Faction</a></li>
+	      		</ul>
+	      		<ul class="nav navbar-nav navbar-right">
+	        		<li><a href="add.html">Add Alien</a></li>
+	     		</ul>
+	      </div>
+	  </div>
+	 </nav>
 	
 	
 	<c:forEach var="a" items="${aliensList}">
