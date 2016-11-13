@@ -25,7 +25,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Alien List</a>
+	      <a class="navbar-brand" href="list.do">Alien List</a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
@@ -68,7 +68,7 @@
 	</c:forEach>
 	<!-- Footer -->
 <footer class="container-fluid bg-4 text-center" id="footer">
-  <p>Jonathan Edwards | Skill Distillery SD7</p>
+  <p>Jonathan Edwards | Skill Distillery SD7 | Week 7</p>
 </footer>
 
 </body>

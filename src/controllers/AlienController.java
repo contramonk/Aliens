@@ -30,7 +30,7 @@ public class AlienController {
   public ModelAndView addAlien(Alien alien, @ModelAttribute("sessionData") CurrentState cs) {
 	  alienDAO.addAlienToList(alien);
 	  ModelAndView mv = new ModelAndView();
-	  mv.setViewName("aliens.jsp");
+	  mv.setViewName("edit.jsp");
 	  mv.addObject("alien", alien);
 	  mv.addObject("aliensList", alienDAO.getAliensList());
 	  return mv;

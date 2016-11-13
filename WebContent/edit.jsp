@@ -54,31 +54,34 @@
 			<form action="update.do" method="POST">
 			<input type="hidden" name="oldName" value="${alien.name}">
 			<div class="form-group">
-				<label for="aName">Name</label>
+				<label for="aName">Name</label><br />
 		      	<input type="text" id="aName" name="name" value="${alien.name}">
 			</div>
 			<div class="form-group">
-		      	<label for="aSpecies">Species</label>
+		      	<label for="aSpecies">Species</label><br />
 		        <input type="text" id="aSpecies" name="species" value="${alien.species}">
 			</div>
 			<div class="form-group">
-				<label for="aStarSystem">Star System</label>
+				<label for="aStarSystem">Star System</label><br />
 				<input type="text" id="aStarSystem" name="starSystem" value="${alien.starSystem}">
 			</div>
-				<label for="aFaction">Email address</label>
-				<input type="text" id="aFaction" name="faction" value="${alien.faction}">
 			<div class="form-group">
-				<label for="aImage">Image</label>
+				<label for="aFaction">Faction</label><br />
+				<input type="text" id="aFaction" name="faction" value="${alien.faction}">
+			</div>
+			<div class="form-group">
+				<label for="aImage">Image</label><br />
 				<input type="text" id="aImage" name="image" value="${alien.image}">
 			</div>
 		        <input type="submit" value="Submit" />
 		    
 		    </form>
-      	</div>
-     </div>
+      	
+     	</div>
+ 	</div>
  </div>
  <footer class="container-fluid bg-4 text-center" id="footer">
-  <p>Jonathan Edwards | Skill Distillery SD7</p>
+  <p>Jonathan Edwards | Skill Distillery SD7 | Week 7</p>
 </footer>
 </body>
 </html>
