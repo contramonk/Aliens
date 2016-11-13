@@ -30,13 +30,11 @@
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="add.html">Add Alien</a></li>
+	        <li><a href="sort.do">Filter</a></li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
-	
-	
-	
 	
 	
 	<c:forEach var="a" items="${aliensList}">

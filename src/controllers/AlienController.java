@@ -75,4 +75,13 @@ public class AlienController {
 //	  mv.addObject("aliensList", alienDAO.getAliensList());
 	  return mv;
   }
+  
+  @RequestMapping(path="sort.do")
+  public ModelAndView sortAliens() {
+	  alienDAO.sortAliensByName();
+	  ModelAndView mv = new ModelAndView(); // here
+	  mv.setViewName("list.do");
+	  
+	  return mv;
+  }
 }

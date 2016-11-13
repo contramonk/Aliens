@@ -15,6 +15,7 @@ public interface AlienDAO {
 	Alien getAlienByName(String name);
 	void updateAlien(int index, Alien alien);
 	int getAlienIndex(Alien alien);
+	void sortAliensByName();
 }
 
 

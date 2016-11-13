@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -84,9 +85,13 @@ public class AlienDAOImp implements AlienDAO {
 	}
 	
 	public int getAlienIndex(Alien alien) {	
-		System.out.println("Alien index:" + AliensList.indexOf(alien));
 		int index = AliensList.indexOf(alien);
 		return index;
+	}
+	
+	
+	public void sortAliensByName() {
+		AliensList.sort((Alien a1, Alien a2)->a1.getName().compareTo(a2.getName()));
 	}
 
 }

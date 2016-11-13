@@ -85,3 +85,7 @@
 </footer>
 </body>
 </html>
+
+<!-- BUG: If I am on this webpage too long and click Alien List Link, warning box
+	pops up, saying I may duplicate data. When I click OK, arraylist reverts to
+	original data -->
