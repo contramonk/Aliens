@@ -8,18 +8,24 @@ import entities.Alien;
 
 @Repository
 public interface AlienDAO {
-	
+
 	void addAlienToList(Alien alien);
+
 	List<Alien> getAliensList();
+
 	void removeAlienFromList(String name);
+
 	Alien getAlienByName(String name);
+
 	void updateAlien(int index, Alien alien);
+
 	int getAlienIndex(Alien alien);
+
 	void sortAliensByName();
+
 	void sortAliensBySpecies();
+
 	void sortAliensByFaction();
+
 	void sortAliensByStarSystem();
 }
-
-
-

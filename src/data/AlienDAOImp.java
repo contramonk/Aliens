@@ -64,11 +64,11 @@ public class AlienDAOImp implements AlienDAO {
 				break;
 			}
 		}
-		if(alienToRemove!=null) {
-		AliensList.remove(alienToRemove);
+		if (alienToRemove != null) {
+			AliensList.remove(alienToRemove);
 		}
 	}
-	
+
 	public Alien getAlienByName(String name) {
 		Alien alienToFind = null;
 		for (Alien alien : AliensList) {
@@ -79,29 +79,30 @@ public class AlienDAOImp implements AlienDAO {
 		}
 		return alienToFind;
 	}
-	
+
 	public void updateAlien(int index, Alien alien) {
 		AliensList.set(index, alien);
 	}
-	
-	public int getAlienIndex(Alien alien) {	
+
+	public int getAlienIndex(Alien alien) {
 		int index = AliensList.indexOf(alien);
 		return index;
 	}
-	
-	
+
 	public void sortAliensByName() {
-		AliensList.sort((Alien a1, Alien a2)->a1.getName().compareTo(a2.getName()));
+		AliensList.sort((Alien a1, Alien a2) -> a1.getName().compareTo(a2.getName()));
 	}
+
 	public void sortAliensBySpecies() {
-		AliensList.sort((Alien a1, Alien a2)->a1.getSpecies().compareTo(a2.getSpecies()));
+		AliensList.sort((Alien a1, Alien a2) -> a1.getSpecies().compareTo(a2.getSpecies()));
 	}
+
 	public void sortAliensByStarSystem() {
-		AliensList.sort((Alien a1, Alien a2)->a1.getStarSystem().compareTo(a2.getStarSystem()));
+		AliensList.sort((Alien a1, Alien a2) -> a1.getStarSystem().compareTo(a2.getStarSystem()));
 	}
+
 	public void sortAliensByFaction() {
-		AliensList.sort((Alien a1, Alien a2)->a1.getFaction().compareTo(a2.getFaction()));
+		AliensList.sort((Alien a1, Alien a2) -> a1.getFaction().compareTo(a2.getFaction()));
 	}
-	
 
 }
