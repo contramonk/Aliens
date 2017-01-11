@@ -1,7 +1,7 @@
 # Aliens
 
 ##Description
-Aliens is a CRUD project done by Jonathan Edwards. Week 7 at Skill Distillery. You can view the application on my [website](http://www.contramonk.com)
+Aliens is a CRUD project done by Jonathan Edwards. Week 7 at Skill Distillery. You can view the application on my [website](http://www.contramonk.com:8080/Aliens/)
 
 ##What is Aliens?
 The requirements are:
